@@ -29,6 +29,9 @@ class BLEController:
     def __irq_handler(self):
         message = self.__uart.read().decode().strip()
         
+        if "*" in self.__events:
+            self.__events["*"](message)
+            if message == "*": return
         if message in self.__events:
             self.__events[message]()
     
