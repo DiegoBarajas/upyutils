@@ -1,4 +1,3 @@
-from .master import ESPNowMaster
-from .receiver import ESPNowReceiver
+from .espnow import ESPNow
 
-__all__ = ["ESPNowMaster", "ESPNowReceiver"]
+__all__ = ["ESPNow"]
