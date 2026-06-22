@@ -176,6 +176,24 @@ class ESPNow:
             pass
 
         return mac, msg
+    
+    
+    def on_receive(
+        self, 
+        callback : function
+    ) -> None:
+        """
+        Agrega una irq al recibir mensaje
+        
+        Args:
+            callback (function): Funcion a ejecutar al caer la irq
+            
+        Returns:
+            None
+        """
+        
+        self._callback = callback
+        self.e.irq(self._irq_handler)
 
     def _resolve_peer(
         self,
@@ -202,3 +220,14 @@ class ESPNow:
         raise ValueError(
             "Peer '{}' no registrado".format(peer)
         )
+
+
+    def _irq_handler(self, e):
+        while True:
+            mac, msg = e.recv(0)
+
+            if mac is None:
+                break
+
+            if self._callback:
+                self._callback(mac, msg)
