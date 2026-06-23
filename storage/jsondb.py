@@ -1,20 +1,20 @@
 import ujson
 import os
 
-class ConfigManager:
+class JsonDB:
     """
-    Administrador de archivos de configuración JSON.
+    Administrador de archivos de JSON.
 
     Permite crear, leer, modificar y eliminar valores dentro de
     un archivo JSON almacenado en el sistema de archivos del
     dispositivo.
 
     Attributes:
-        path (str): Ruta del archivo de configuración.
+        path (str): Ruta del archivo JSON.
     """
     def __init__(
         self, 
-        path: str = "/config.json"
+        path: str = "/data.json"
     ) -> None:
         """
         Inicializa el administrador de configuración.
@@ -23,7 +23,7 @@ class ConfigManager:
 
         Args:
             path (str, optional): Ruta del archivo JSON.
-                Por defecto es "/config.json".
+                Por defecto es "/data.json".
 
         Returns:
             None
@@ -44,7 +44,7 @@ class ConfigManager:
         value=None
     ) -> None:
         """
-        Crea o actualiza una clave dentro del archivo de configuración.
+        Crea o actualiza una clave dentro del archivo.
 
         Args:
             key (str): Nombre de la clave.
@@ -67,7 +67,7 @@ class ConfigManager:
         key: str
     ) -> None:
         """
-        Elimina una clave del archivo de configuración.
+        Elimina una clave del archivo.
 
         Si la clave no existe, la operación es ignorada.
 
@@ -110,7 +110,7 @@ class ConfigManager:
     
     def read(self) -> dict:
         """
-        Lee el contenido completo del archivo de configuración.
+        Lee el contenido completo del archivo.
 
         Returns:
             dict: Diccionario con todos los valores almacenados.
@@ -125,8 +125,8 @@ class ConfigManager:
         """
         Establece valores predeterminados para claves inexistentes.
 
-        Solo se agregan las claves que aún no existen en la
-        configuración actual.
+        Solo se agregan las claves que aún no existen en el
+        archivo actual.
 
         Args:
             values (dict): Diccionario con claves y valores

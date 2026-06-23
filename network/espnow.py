@@ -1,5 +1,5 @@
 import network
-import espnow
+import network.espnow as espnow
 
 class ESPNow:
     """

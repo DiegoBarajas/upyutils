@@ -1,7 +1,7 @@
 import bluetooth
 from ._ble_ import BLEUART
 
-class BLEController:
+class BLE:
     """
     Controlador BLE UART para MicroPython.
 
