@@ -9,7 +9,7 @@ class BLE:
     utilizando una interfaz basada en eventos.
 
     Example:
-        >>> ble = BLEController("Kyber")
+        >>> ble = BLE("Kyber")
 
         >>> ble.add_event("ON", turn_on)
         >>> ble.add_event("OFF", turn_off)

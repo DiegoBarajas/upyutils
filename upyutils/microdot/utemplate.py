@@ -1,4 +1,4 @@
-from microdot.utemplate import recompile
+from upyutils.microdot.utemplate import recompile
 
 _loader = None
 

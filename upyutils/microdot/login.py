@@ -1,6 +1,6 @@
 from time import time
-from microdot.microdot import redirect
-from microdot.microdot import urlencode, invoke_handler
+from upyutils.microdot.microdot import redirect
+from upyutils.microdot.microdot import urlencode, invoke_handler
 
 
 class Login:

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uPyUtils"
+version = "0.0.1"
+description = "Utilities, drivers, and networking tools for ESP32 MicroPython projects."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Diego Barajas" }
+]
+requires-python = ">=3.8"
+keywords=[
+    "micropython",
+    "esp32",
+    "embedded",
+    "iot",
+    "wifi",
+    "esp-now",
+    "ble",
+    "drivers",
+    "networking",
+    "microcontroller"
+]
+
+[project.urls]
+Homepage = "https://github.com/DiegoBarajas/upyutils"
+Repository = "https://github.com/DiegoBarajas/upyutils"
+Issues = "https://github.com/DiegoBarajas/upyutils/issues"
+
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]

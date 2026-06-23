@@ -1,5 +1,5 @@
-import network
-import network.espnow as espnow
+import upyutils.network as network
+import upyutils.network.espnow as espnow
 
 class ESPNow:
     """

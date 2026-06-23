@@ -1,8 +1,8 @@
 import asyncio
-from microdot.microdot import Request, Response, AsyncBytesIO
+from upyutils.microdot.microdot import Request, Response, AsyncBytesIO
 
 try:
-    from microdot.websocket import WebSocket
+    from upyutils.microdot.websocket import WebSocket
 except:  # pragma: no cover  # noqa: E722
     WebSocket = None
 

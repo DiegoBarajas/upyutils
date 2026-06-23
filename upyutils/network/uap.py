@@ -1,4 +1,4 @@
-import network
+import upyutils.network as network
 import time
 
 """

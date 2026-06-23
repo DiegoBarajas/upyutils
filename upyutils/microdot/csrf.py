@@ -1,4 +1,4 @@
-from microdot.microdot import abort
+from upyutils.microdot.microdot import abort
 
 
 class CSRF:

@@ -1,5 +1,5 @@
 import asyncio
-from microdot.helpers import wraps
+from upyutils.microdot.helpers import wraps
 
 try:
     import orjson as json

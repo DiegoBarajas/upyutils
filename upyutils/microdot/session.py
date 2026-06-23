@@ -1,6 +1,6 @@
 import jwt
-from microdot.microdot import invoke_handler
-from microdot.helpers import wraps
+from upyutils.microdot.microdot import invoke_handler
+from upyutils.microdot.helpers import wraps
 
 
 class SessionDict(dict):

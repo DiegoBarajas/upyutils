@@ -1,5 +1,5 @@
-from microdot.microdot import abort
-from microdot.microdot import invoke_handler
+from upyutils.microdot.microdot import abort
+from upyutils.microdot.microdot import invoke_handler
 
 
 class BaseAuth:
