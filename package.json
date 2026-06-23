@@ -1,6 +1,6 @@
 {
     "version": "0.1.0",
-    "description": "UPYUtils is a modular utility library for MicroPython, providing networking, BLE communication, device drivers, and configuration management for ESP32-based applications.",
+    "description": "uPyUtils is a modular utility library for MicroPython, providing networking, BLE communication, device drivers, and configuration management for ESP32-based applications.",
     "urls": [
         ["ble", "ble"],
         ["drivers", "drivers"],
