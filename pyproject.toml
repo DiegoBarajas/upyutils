@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uPyUtils"
-version = "0.0.1"
+version = "0.0.20"
 description = "Utilities, drivers, and networking tools for ESP32 MicroPython projects."
 readme = "README.md"
 license = "MIT"
